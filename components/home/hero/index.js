@@ -12,7 +12,9 @@ const Hero = () => {
       <div className={`${styles.wrapper} wrapper`}>
         <div className={`${styles.container}`}>
           <div className={styles.left}>
-            <h2>Buy and Own awesome African NFTs</h2>
+            <h1>
+              Buy and Own <span>awesome</span> African NFTs
+            </h1>
 
             <p>
               Welcome to Akara marketplace, you can buy and sell awesome artwork
@@ -24,7 +26,7 @@ const Hero = () => {
               <Swiper
                 // centeredSlides={true}
                 // slidesPerView={4}
-                spaceBetween={50}
+                spaceBetween={30}
                 breakpoints={{
                   200: { slidesPerView: 1 },
                   500: { slidesPerView: 1 },
@@ -49,17 +51,49 @@ const Hero = () => {
               >
                 <SwiperSlide>
                   <div className={styles.card}>
-                    <h5>Card One</h5>
+                    <div className={styles.imgDiv}>
+                      <img src='/images/slide-pix19.png' alt='' />
+                    </div>
+                    <div className={styles.cardFooter}>
+                      <h4>Comming Soon 1</h4>
+                      <h6>Akara Market</h6>
+                    </div>
                   </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
                   <div className={styles.card}>
-                    <h5>Card Two</h5>
+                    <div className={styles.imgDiv}>
+                      <img src='/images/slide-pix2.png' alt='' />
+                    </div>
+                    <div className={styles.cardFooter}>
+                      <h4>Comming Soon 2</h4>
+                      <h6>Akara Market</h6>
+                    </div>
                   </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
                   <div className={styles.card}>
-                    <h5>Card Three</h5>
+                    <div className={styles.imgDiv}>
+                      <img src='/images/slide-pix3.png' alt='' />
+                    </div>
+                    <div className={styles.cardFooter}>
+                      <h4>Comming Soon 3</h4>
+                      <h6>Akara Market</h6>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className={styles.card}>
+                    <div className={styles.imgDiv}>
+                      <img src='/images/slide-pix4.png' alt='' />
+                    </div>
+                    <div className={styles.cardFooter}>
+                      <h4>Comming Soon 4</h4>
+                      <h6>Akara Market</h6>
+                    </div>
                   </div>
                 </SwiperSlide>
               </Swiper>

@@ -81,7 +81,8 @@
         }
 
         &.darkText {
-          color: var(--new-blue);
+          // color: var(--new-blue);
+          color: var(--white);
         }
         > i {
           font-size: 10px;
