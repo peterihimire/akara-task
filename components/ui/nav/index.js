@@ -49,7 +49,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
               router.pathname === "/about-us/who-we-are" ||
               router.pathname === "/about-us/our-vision" ||
               router.pathname === "/faq"
-                ? styles.darkText
+                ? styles.lightText
                 : ""
             }`}
           />
@@ -67,7 +67,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
               router.pathname === "/about-us/who-we-are" ||
               router.pathname === "/about-us/our-vision" ||
               router.pathname === "/faq"
-                ? styles.darkText
+                ? styles.lightText
                 : ""
             }`}
           />
@@ -83,7 +83,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
               router.pathname === "/contact-us" ||
               router.pathname === "/about-us" ||
               router.pathname === "/faq"
-                ? styles.darkText
+                ? styles.lightText
                 : ""
             }`}
           />
@@ -101,7 +101,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
               router.pathname === "/about-us/who-we-are" ||
               router.pathname === "/about-us/our-vision" ||
               router.pathname === "/faq"
-                ? styles.darkText
+                ? styles.lightText
                 : ""
             }`}
           />
@@ -137,7 +137,7 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
             className='btn-primary btn-large'
             onClick={() => router.push("/")}
           >
-            Our Slack Community
+           Join Our Slack Community
           </button>
         </div>
       </div>

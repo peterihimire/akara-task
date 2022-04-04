@@ -39,7 +39,8 @@ const Footer = () => {
             </a>
           </div>
           <div className={styles.copyright}>
-            <span>Cloudfift © 2014 - 2020</span>
+            <p>Copyright © 2020 Akara Marketplace</p>
+            <p>All rights reserved</p>
           </div>
           {/* <div className={styles.extraLinks}>
             <div>
@@ -58,25 +59,19 @@ const Footer = () => {
           <h3>Company</h3>
           <ul>
             <li>
-              <ActiveLink name='Who we are' href='/about-us' />
+              <ActiveLink name='About Us' href='/about' />
             </li>
             <li>
-              <ActiveLink name='Client we serve' href='/clients' />
+              <ActiveLink name='Blog' href='/blog' />
             </li>
             <li>
-              <ActiveLink name='Our people' href='/our-people-and-leadership' />
+              <ActiveLink name='Contact Us' href='/contact' />
             </li>
             <li>
-              <ActiveLink name='Our Values' href='/what-we-believe' />
+              <ActiveLink name='Pricing' href='/pricing' />
             </li>
             <li>
-              <ActiveLink name='Partners' href='/partners-affiliation' />
-            </li>
-            <li>
-              <ActiveLink name='Careers' href='/careers' />
-            </li>
-            <li>
-              <ActiveLink name='Portfolio' href='/portfolio' />
+              <ActiveLink name='Testimonials' href='/testimonials' />
             </li>
           </ul>
         </div>
@@ -85,22 +80,19 @@ const Footer = () => {
           <h3>Support</h3>
           <ul>
             <li>
-              <ActiveLink name='Cloud Security' href='/cloud-security' />
+              <ActiveLink name='Help Center' href='/help-center' />
             </li>
             <li>
-              <ActiveLink
-                name='Infrastructure Support'
-                href='/infrastructure-support'
-              />
+              <ActiveLink name='Terms of service' href='/terms-of-service' />
             </li>
             <li>
               <ActiveLink name='Product Design' href='/product-design' />
             </li>
             <li>
-              <ActiveLink
-                name='Application Re-engineering'
-                href='/application-reengineering'
-              />
+              <ActiveLink name='Privacy policy' href='/privacy-policy' />
+            </li>
+            <li>
+              <ActiveLink name='Status' href='/status' />
             </li>
           </ul>
         </div>
@@ -108,28 +100,28 @@ const Footer = () => {
         <div className={styles.last}>
           <h3>Social Platforms</h3>
           <div className={styles.socials}>
-            <a href='/'>
-              <i className='fab fa-instagram'></i>
+            <a href='/instagram'>
+              <img src='/images/instagram.svg' alt='' />
             </a>
-            <a href='/'>
-              <i className='fab fa-facebook-f'></i>
+            <a href='/dribble'>
+              <img src='/images/dribble.svg' alt='' />
             </a>
-            <a href='/'>
-              <i className='fab fa-linkedin-in'></i>
+            <a href='/twitter'>
+              <img src='/images/twitter.svg' alt='' />
             </a>
-            <a href='/'>
-              <i className='fab fa-youtube'></i>
+            <a href='/youtube'>
+              <img src='/images/youtube.svg' alt='' />
             </a>
           </div>
-          {/* <p>
-            As a biz, expansion is such a milestone. It's a new month we are
-            welcoming some new faces at cloudfift to give you an even better
-            full service experience.
-          </p>
-          <a href='/'>
-            <i className='fab fa-twitter'></i>
-            <span>Follow</span>
-          </a> */}
+          <div>
+            <button
+              className='btn-primary btn-block'
+              onClick={() => router.push("/")}
+            >
+              Join Our Slack Community
+            </button>
+          </div>
+     
         </div>
       </div>
     </footer>
