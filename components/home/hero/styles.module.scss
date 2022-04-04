@@ -1,0 +1,98 @@
+.hero {
+  // background-color: red;
+  width: 100%;
+  height: 708px;
+  // background: url("/images/particles1.gif") no-repeat;
+  // background: url("https://assets5.lottiefiles.com/packages/lf20_46tauco6.json")
+  //   no-repeat;
+  @media screen and (max-width: 1200px) {
+    height: auto;
+    padding: 200px 0px 0px;
+  }
+
+  .wrapper {
+    position: relative;
+    height: 100%;
+
+    .container {
+      // background: url("/images/particles1.gif") no-repeat;
+
+      display: flex;
+      // background-color: aqua;
+      // align-items: center;
+      position: relative;
+      width: 97.5vw;
+
+      left: 0;
+      top: 0;
+      right: 0;
+      height: 100%;
+
+      .left {
+        // background-color: yellow;
+        width: 65%;
+        padding-top: 228px;
+        // padding-bottom: 198px;
+        color: white;
+
+        h1 {
+          font-size: 84px;
+          line-height: 100px;
+          max-width: 500px;
+
+          span {
+            color: #fe976c;
+          }
+        }
+
+        p {
+          max-width: 450px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+
+      .right {
+        // background-color: blue;
+        // flex: 1;
+        max-width: 485px;
+        height: 100%;
+        padding-top: 228px;
+
+        .carousel {
+          height: 100%;
+          width: 100%;
+
+          .card {
+            background: #171717;
+            // border-radius: 8px;
+            // padding: 40px 30px;
+            height: 404px;
+            // width: 360px;
+
+            .imgDiv {
+              width: 100%;
+              height: 350px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            .cardFooter {
+              h4 {
+                color: var(--white);
+              }
+              h6 {
+                color: #fe976c;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
