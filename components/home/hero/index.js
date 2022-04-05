@@ -2,6 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Input from "../../ui/input";
+import Lottie from "react-lottie-player";
+import lottieJson from "../../../public/lotties/json-background.json";
 
 import styles from "./styles.module.scss";
 
@@ -10,6 +12,21 @@ SwiperCore.use([Pagination, Autoplay]);
 const Hero = () => {
   return (
     <section className={styles.hero}>
+      <div className={styles.lottieBg}>
+        <Lottie
+          loop
+          animationData={lottieJson}
+          play
+          style={{
+            width: "100%",
+            height: "100%",
+            position: "absolute",
+            left: 0,
+            right: 0,
+          }}
+        />
+      </div>
+
       <div className={`${styles.wrapper} wrapper`}>
         <div className={`${styles.container}`}>
           <div className={styles.left}>
@@ -72,13 +89,13 @@ const Hero = () => {
                   2500: { slidesPerView: 1.5 },
                 }}
                 loop
-                pagination={{
-                  el: ".custom-pag1",
-                  clickable: true,
-                  renderBullet: (index, className) => {
-                    return '<span class="' + className + '">' + "</span>";
-                  },
-                }}
+                // pagination={{
+                //   el: ".custom-pag1",
+                //   clickable: true,
+                //   renderBullet: (index, className) => {
+                //     return '<span class="' + className + '">' + "</span>";
+                //   },
+                // }}
                 className={`swiper-wrapper ${styles.slideWrapper}`}
                 autoplay={{
                   delay: 2500,
