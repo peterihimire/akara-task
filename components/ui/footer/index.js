@@ -115,13 +115,12 @@ const Footer = () => {
           </div>
           <div>
             <button
-              className='btn-primary btn-block'
+              className='btn-primary btn-large'
               onClick={() => router.push("/")}
             >
               Join Our Slack Community
             </button>
           </div>
-     
         </div>
       </div>
     </footer>

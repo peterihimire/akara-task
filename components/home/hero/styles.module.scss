@@ -1,8 +1,10 @@
 .hero {
-  // background-color: red;
+  background-color: red;
   width: 100%;
   height: 708px;
   // background: url("/images/particles1.gif") no-repeat;
+  background-size: cover;
+  background-position: center;
   // background: url("https://assets5.lottiefiles.com/packages/lf20_46tauco6.json")
   //   no-repeat;
   @media screen and (max-width: 1200px) {
@@ -15,9 +17,8 @@
     height: 100%;
 
     .container {
-      // background: url("/images/particles1.gif") no-repeat;
       display: flex;
-      // background-color: aqua;
+      background-color: aqua;
       // align-items: center;
       position: relative;
       width: 97.5vw;
@@ -35,15 +36,35 @@
       }
 
       .left {
-        // background-color: yellow;
+        background-color: yellow;
         width: 65%;
         padding-top: 158px;
         // padding-top: 228px;
         // padding-bottom: 198px;
         color: white;
+        position: relative;
+
+        .handCurve {
+          position: absolute;
+          right: 50px;
+          bottom: 190px;
+
+          // @media screen and (max-width: 2500px) {
+          //   position: absolute;
+          //   right: 220px;
+          //   bottom: 190px;
+          // }
+
+          @media screen and (max-width: 1200px) {
+            position: absolute;
+            right: 20px;
+            bottom: 190px;
+          }
+        }
 
         .subscribe {
-          display: flex;
+          // display: flex;
+          width: 690px;
           // background-color: var(--white);
           // padding: 10px;
           // width: 80%;
@@ -57,7 +78,8 @@
             border-radius: 4px;
 
             .formGroup {
-              width: 450px;
+              // width: 450px;
+              width: 100%;
 
               input {
                 border-radius: 0px;
@@ -82,6 +104,7 @@
 
           > div {
             padding: 30px;
+            text-align: center;
           }
           h3 {
             font-style: normal;
@@ -103,7 +126,8 @@
         h1 {
           font-size: 84px;
           line-height: 100px;
-          max-width: 500px;
+          max-width: 550px;
+          letter-spacing: 1px;
 
           @media screen and (max-width: 700px) {
             font-size: 34px;
@@ -116,11 +140,13 @@
         }
 
         p {
-          max-width: 450px;
+          max-width: 500px;
           font-style: normal;
           font-weight: 400;
           font-size: 18px;
           line-height: 26px;
+          color: #c2c2c2;
+          letter-spacing: 1px;
         }
 
         @media screen and (max-width: 1200px) {
@@ -136,7 +162,7 @@
       }
 
       .right {
-        // background-color: blue;
+        background-color: blue;
         // flex: 1;
         max-width: 485px;
         height: 100%;

@@ -21,6 +21,9 @@ const Hero = () => {
               Welcome to Akara marketplace, you can buy and sell awesome artwork
               to enjoy cool feature form us.
             </p>
+            <div className={styles.handCurve}>
+              <img src='/images/handcurve.svg' alt='' />
+            </div>
             <div className={styles.subscribe}>
               <form>
                 <div className={styles.formGroup}>
@@ -82,7 +85,7 @@ const Hero = () => {
                   disableOnInteraction: false,
                 }}
               >
-                <SwiperSlide>
+                {/* <SwiperSlide>
                   <div className={styles.card}>
                     <div className={styles.imgDiv}>
                       <img src='/images/slide-pix19.png' alt='' />
@@ -92,9 +95,9 @@ const Hero = () => {
                       <h6>Akara Market</h6>
                     </div>
                   </div>
-                </SwiperSlide>
+                </SwiperSlide> */}
 
-                {/* <SwiperSlide>
+                <SwiperSlide>
                   <div className={styles.card}>
                     <div className={styles.imgDiv}>
                       <img src='/images/slide-pix2.png' alt='' />
@@ -104,7 +107,7 @@ const Hero = () => {
                       <h6>Akara Market</h6>
                     </div>
                   </div>
-                </SwiperSlide> */}
+                </SwiperSlide>
 
                 <SwiperSlide>
                   <div className={styles.card}>

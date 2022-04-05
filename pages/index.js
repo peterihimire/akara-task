@@ -1,6 +1,6 @@
 import Layout from "../layouts/landing";
 import HomeHero from "../components/home/hero";
-// import Companies from "../components/home/companies";
+import Notified from "../components/home/notified";
 // import OurWork from "../components/home/ourWork";
 // import WhyChooseUs from "../components/home/whyChooseUs";
 // import Services from "../components/home/services";
@@ -16,8 +16,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
       <HomeHero />
-      {/*  <Companies />
-      <OurWork />
+      <Notified />
+      {/*  <OurWork />
       <WhyChooseUs />
       <Services />
       <WorkWith heading="Working With Cloudfift" />
