@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Input from "../../ui/input";
+import CountDownTimer from "../../ui/countDown";
 import Lottie from "react-lottie-player";
 import lottieJson from "../../../public/lotties/json-background.json";
 
@@ -58,8 +59,8 @@ const Hero = () => {
                 </div>
               </form>
             </div>
-
-            <div className={styles.countDown}>
+            <CountDownTimer />
+            {/* <div className={styles.countDown}>
               <div>
                 <h3>30</h3>
                 <p>Days</p>
@@ -72,7 +73,7 @@ const Hero = () => {
                 <h3>20</h3>
                 <p>Seconds</p>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className={styles.right}>
             <div className={styles.carousel}>
@@ -102,7 +103,7 @@ const Hero = () => {
                   disableOnInteraction: false,
                 }}
               >
-                {/* <SwiperSlide>
+                <SwiperSlide>
                   <div className={styles.card}>
                     <div className={styles.imgDiv}>
                       <img src='/images/slide-pix19.png' alt='' />
@@ -112,7 +113,7 @@ const Hero = () => {
                       <h6>Akara Market</h6>
                     </div>
                   </div>
-                </SwiperSlide> */}
+                </SwiperSlide>
 
                 <SwiperSlide>
                   <div className={styles.card}>
