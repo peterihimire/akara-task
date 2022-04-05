@@ -1,0 +1,74 @@
+.notified {
+  background: url("/images/bg-with-line.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 370px;
+
+  .wrapper {
+    align-items: center;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    .contentWrapper {
+      h3 {
+        color: var(--white);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.5px;
+      }
+      p {
+        color: var(--white);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: #e2e2e2;
+        max-width: 550px;
+        margin: 20px auto;
+      }
+      .subscribe {
+        // display: flex;
+        width: 690px;
+        margin: 0 auto;
+        // background-color: var(--white);
+        // padding: 10px;
+        // width: 80%;
+        // border-radius: 4px;
+
+        form {
+          display: flex;
+          align-items: center;
+          background-color: var(--white);
+          padding: 10px;
+          border-radius: 4px;
+
+          .formGroup {
+            width: 100%;
+
+            input {
+              border-radius: 0px;
+              border: 1px solid var(--white);
+              color: rgba(25, 36, 69, 0.7);
+
+              &:focus {
+                border: 1px solid #fe976c;
+                border-radius: 4px;
+              }
+            }
+          }
+          .submitBtn {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
