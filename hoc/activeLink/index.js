@@ -8,7 +8,7 @@ const ActiveLink = ({ href, name, as, children, linkClass }) => {
 
   const style = {
     // color: router.pathname === href ? "#1E2348" : "",
-    fontFamily: router.pathname === href ? "Proxima-Medium" : "Proxima-Regular",
+    fontFamily: router.pathname === href ? "Inter-Bold" : "Inter-Regular",
   };
 
   return (
