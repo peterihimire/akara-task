@@ -1,24 +1,12 @@
 import React from "react";
-import styles from "./styles.module.scss";
 import Logo from "../../../public/images/logo.svg";
 import ActiveLink from "../../../hoc/activeLink";
-import Link from "next/link";
+
+import styles from "./styles.module.scss";
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      {/* <div className={styles.outro}>
-        <h2>REACH US</h2>
-        <p>
-          You might already know what you’re looking for, we can make it come to
-          live. Even you don’t know yet we’re great detectives. Write email to
-          us <span>info@Cloudfift.com</span>{" "}
-        </p>
-        <Link href="/contact-us">
-          <a className="btn-dark btn-medium">Shoot Us A Message</a>
-        </Link>
-      </div> */}
-
       <div className={styles.wrapper}>
         <div className={styles.first}>
           <div className={styles.logo}>
@@ -42,17 +30,6 @@ const Footer = () => {
             <p>Copyright © 2020 Akara Marketplace</p>
             <p>All rights reserved</p>
           </div>
-          {/* <div className={styles.extraLinks}>
-            <div>
-              <a href='/'>Privacy Policy</a>
-            </div>
-            <div>
-              <a href='/'>Terms & Condition</a>
-            </div>
-            <div>
-              <a href='/'>FAQ</a>
-            </div>
-          </div> */}
         </div>
 
         <div className={styles.second}>

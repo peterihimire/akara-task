@@ -46,7 +46,6 @@ const Hero = () => {
               <form>
                 <div className={styles.formGroup}>
                   <Input
-                    // labelText='What’s your Email?'
                     type='email'
                     name='email'
                     id='email'
@@ -60,20 +59,6 @@ const Hero = () => {
               </form>
             </div>
             <CountDownTimer />
-            {/* <div className={styles.countDown}>
-              <div>
-                <h3>30</h3>
-                <p>Days</p>
-              </div>
-              <div>
-                <h3>10</h3>
-                <p>Hours</p>
-              </div>
-              <div>
-                <h3>20</h3>
-                <p>Seconds</p>
-              </div>
-            </div> */}
           </div>
           <div className={styles.right}>
             <div className={styles.carousel}>
@@ -83,20 +68,11 @@ const Hero = () => {
                 spaceBetween={30}
                 breakpoints={{
                   200: { slidesPerView: 1.5 },
-                  // 500: { slidesPerView: 1.5 },
                   700: { slidesPerView: 2.5 },
-                  // 900: { slidesPerView: 1.5 },
                   1200: { slidesPerView: 1.5 },
                   2500: { slidesPerView: 1.5 },
                 }}
                 loop
-                // pagination={{
-                //   el: ".custom-pag1",
-                //   clickable: true,
-                //   renderBullet: (index, className) => {
-                //     return '<span class="' + className + '">' + "</span>";
-                //   },
-                // }}
                 className={`swiper-wrapper ${styles.slideWrapper}`}
                 autoplay={{
                   delay: 2500,
