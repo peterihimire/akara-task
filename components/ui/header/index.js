@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import styles from "./styles.module.scss";
 import Link from "next/link";
 import Nav from "../nav";
 import Logo from "../../../public/images/logo.svg";
 import LogoDark from "../../../public/images/logo.svg";
 import { useRouter } from "next/router";
+
+import styles from "./styles.module.scss";
 
 const Header = ({ isOpen, clicked }) => {
   const [isDropOpen, setDropOpen] = useState(false);
@@ -48,11 +49,9 @@ const Header = ({ isOpen, clicked }) => {
       className={`${styles.header} ${
         bgChange ||
         isOpen ||
-        router.pathname === "/contact-us" ||
-        router.pathname === "/about-us" ||
-        router.pathname === "/about-us/who-we-are" ||
-        router.pathname === "/about-us/our-vision" ||
-        router.pathname === "/faq"
+        router.pathname === "/how-it-works" ||
+        router.pathname === "/market-place" ||
+        router.pathname === "/about"
           ? styles.bgDark
           : ""
       }`}
@@ -63,11 +62,9 @@ const Header = ({ isOpen, clicked }) => {
             <a className={`${isDropOpen ? styles.lightLogo : ""}`}>
               {bgChange ||
               isOpen ||
-              router.pathname === "/contact-us" ||
-              router.pathname === "/about-us" ||
-              router.pathname === "/about-us/who-we-are" ||
-              router.pathname === "/about-us/our-vision" ||
-              router.pathname === "/faq" ? (
+              router.pathname === "/how-it-works" ||
+              router.pathname === "/market-place" ||
+              router.pathname === "/about" ? (
                 <LogoDark />
               ) : (
                 <Logo />
@@ -94,11 +91,9 @@ const Header = ({ isOpen, clicked }) => {
               <span
                 className={`${
                   bgChange ||
-                  router.pathname === "/contact-us" ||
-                  router.pathname === "/about-us" ||
-                  router.pathname === "/about-us/who-we-are" ||
-                  router.pathname === "/about-us/our-vision" ||
-                  router.pathname === "/faq"
+                  router.pathname === "/how-it-works" ||
+                  router.pathname === "/market-place" ||
+                  router.pathname === "/about"
                     ? "hamburger-inner hamburger-inner-dark"
                     : "hamburger-inner hamburger-inner-light"
                 }`}

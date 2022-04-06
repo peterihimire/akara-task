@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useRouter } from "next/router";
 import Link from "next/link";
 
@@ -7,7 +6,7 @@ const ActiveLink = ({ href, name, as, children, linkClass }) => {
   const router = useRouter();
 
   const style = {
-    // color: router.pathname === href ? "#1E2348" : "",
+
     fontFamily: router.pathname === href ? "Inter-Bold" : "Inter-Regular",
   };
 

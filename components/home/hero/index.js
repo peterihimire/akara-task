@@ -68,9 +68,7 @@ const Hero = () => {
                 spaceBetween={30}
                 breakpoints={{
                   200: { slidesPerView: 1.5 },
-                  // 500: { slidesPerView: 1.5 },
                   700: { slidesPerView: 2.5 },
-                  // 900: { slidesPerView: 1.5 },
                   1200: { slidesPerView: 1.5 },
                   2500: { slidesPerView: 1.5 },
                 }}

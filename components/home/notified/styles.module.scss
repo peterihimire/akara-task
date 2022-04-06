@@ -19,6 +19,10 @@
         font-size: 36px;
         line-height: 40px;
         letter-spacing: 0.5px;
+
+        @media screen and (max-width: 600px) {
+          font-size: 28px;
+        }
       }
       p {
         color: var(--white);
@@ -35,13 +39,8 @@
         margin: 20px auto;
       }
       .subscribe {
-        // display: flex;
         width: 690px;
         margin: 0 auto;
-        // background-color: var(--white);
-        // padding: 10px;
-        // width: 80%;
-        // border-radius: 4px;
 
         @media screen and (max-width: 900px) {
           width: 490px;

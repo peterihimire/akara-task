@@ -1,4 +1,5 @@
 import React from "react";
+
 import styles from "./styles.module.scss";
 
 const HowItWork = () => {
@@ -10,6 +11,12 @@ const HowItWork = () => {
           <li>
             <div>
               <h5>Set up your wallet</h5>
+              <p>Once you’ve set up your wallet of choice.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h5>Make your collection</h5>
               <p>
                 Add social links, a description, profile & banner images adn
                 name of your collection.
@@ -18,28 +25,19 @@ const HowItWork = () => {
           </li>
           <li>
             <div>
-              <h5>Set up your wallet</h5>
+              <h5>Add your NFTs </h5>
               <p>
-                Add social links, a description, profile & banner images adn
-                name of your collection.
+                Upload your artwork (image, 3D, videos) and customize with NFTs
+                wit properties.
               </p>
             </div>
           </li>
           <li>
             <div>
-              <h5>Set up your wallet</h5>
+              <h5>List for sale</h5>
               <p>
-                Add social links, a description, profile & banner images adn
-                name of your collection.
-              </p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h5>Set up your wallet</h5>
-              <p>
-                Add social links, a description, profile & banner images adn
-                name of your collection.
+                Choose between auctions, fixed-price listings, and
+                declining-price listings.
               </p>
             </div>
           </li>
