@@ -85,7 +85,7 @@ const Hero = () => {
                       <img src='/images/slide-pix19.png' alt='' />
                     </div>
                     <div className={styles.cardFooter}>
-                      <h4>Comming Soon 1</h4>
+                      <h5>Comming Soon 1</h5>
                       <h6>Akara Market</h6>
                     </div>
                   </div>
@@ -97,7 +97,7 @@ const Hero = () => {
                       <img src='/images/slide-pix2.png' alt='' />
                     </div>
                     <div className={styles.cardFooter}>
-                      <h4>Comming Soon 2</h4>
+                      <h5>Comming Soon 2</h5>
                       <h6>Akara Market</h6>
                     </div>
                   </div>
@@ -109,7 +109,7 @@ const Hero = () => {
                       <img src='/images/slide-pix3.png' alt='' />
                     </div>
                     <div className={styles.cardFooter}>
-                      <h4>Comming Soon 3</h4>
+                      <h5>Comming Soon 2</h5>
                       <h6>Akara Market</h6>
                     </div>
                   </div>
@@ -121,7 +121,7 @@ const Hero = () => {
                       <img src='/images/slide-pix4.png' alt='' />
                     </div>
                     <div className={styles.cardFooter}>
-                      <h4>Comming Soon 4</h4>
+                      <h5>Comming Soon 2</h5>
                       <h6>Akara Market</h6>
                     </div>
                   </div>

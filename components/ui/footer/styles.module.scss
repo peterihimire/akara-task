@@ -1,9 +1,7 @@
 .footer {
   width: 100%;
-  // background: var(--black);
   padding: 100px 0px 100px;
-  // position: relative;
-  // margin-top: 100px;
+
 
   @media (max-width: 903px) {
     padding: 80px 16px;
@@ -13,7 +11,6 @@
     width: 85%;
     margin: 0 auto;
     display: grid;
-    // grid-template-columns: repeat(4, 1fr);
     grid-template-columns: 2fr 1fr 1fr 1fr;
 
     gap: 0px 50px;
@@ -28,9 +25,9 @@
     }
 
     @media (max-width: 1200px) {
-      // grid-template-columns: repeat(4, auto);
+  
       grid-template-columns: 2fr 1fr 1fr 1fr;
-      // justify-content: center;
+    
     }
 
     @media (max-width: 903px) {
@@ -76,72 +73,17 @@
         }
       }
 
-      // .socials {
-      //   width: 100%;
-      //   display: flex;
-      //   align-items: center;
-
-      //   @media (max-width: 903px) {
-      //     justify-content: center;
-      //   }
-
-      //   a {
-      //     color: var(--white);
-      //     margin-right: 10px;
-      //     font-size: 16px;
-
-      //     &:last-of-type {
-      //       margin-right: 0px;
-      //     }
-      //   }
-      // }
-
       .copyright {
         width: 100%;
-        font-size: 14px;
-        color: #bababa;
         margin-top: 49px;
-      }
 
-      .extraLinks {
-        margin-top: 142px;
-        display: flex;
-
-        @media (max-width: 903px) {
-          margin-top: 64px;
-        }
-
-        @media (max-width: 400px) {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        > div {
-          padding: 0px 10px;
-          border-right: 1px solid #bababa;
-
-          @media (max-width: 400px) {
-            border: 0;
-            padding: 0;
-            margin-bottom: 16px;
-
-            &:last-of-type {
-              margin-bottom: 0px;
-            }
-          }
-
-          &:first-of-type {
-            padding-left: 0px;
-          }
-
-          &:last-of-type {
-            padding-right: 0px;
-            border: 0;
-          }
-
-          a {
-            color: #bababa;
-          }
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          color: #d9dbe1;
+          margin: 5px 0;
         }
       }
     }
@@ -151,7 +93,11 @@
       h3 {
         color: var(--white);
         margin-bottom: 16px;
-        font-family: Inter-Bold;
+        font-family: Inter-Medium;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
       }
 
       ul {
@@ -172,7 +118,11 @@
 
           a {
             color: var(--white);
+            font-style: normal;
+            font-weight: 400;
             font-size: 16px;
+            line-height: 26px;
+            color: #d9dbe1;
           }
         }
       }
@@ -209,14 +159,11 @@
       h3 {
         color: var(--white);
         margin-bottom: 16px;
-        font-family: Inter-Bold;
-      }
-
-      p {
-        color: #bababa;
-        max-width: 300px;
-        font-size: 14px;
-        margin-bottom: 21px;
+        font-family: Inter-Medium;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
       }
     }
   }
