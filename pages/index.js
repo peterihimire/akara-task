@@ -1,12 +1,8 @@
 import Layout from "../layouts/landing";
 import HomeHero from "../components/home/hero";
 import Notified from "../components/home/notified";
-// import OurWork from "../components/home/ourWork";
-// import WhyChooseUs from "../components/home/whyChooseUs";
-// import Services from "../components/home/services";
-// import WorkWith from "../components/home/workWith";
-// import HomeContact from "../components/home/homeContact";
-// import HomeInsight from "../components/home/homeInsight";
+import HowItWork from "../components/home/howItWork";
+
 export default function Home() {
   return (
     <>
@@ -16,13 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
       <HomeHero />
+      <HowItWork />
       <Notified />
-      {/*  <OurWork />
-      <WhyChooseUs />
-      <Services />
-      <WorkWith heading="Working With Cloudfift" />
-      <HomeContact />
-      <HomeInsight /> */}
     </>
   );
 }
