@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import Link from "next/link";
 import ActiveLink from "../../../hoc/activeLink";
 
 import styles from "./styles.module.scss";
 
-const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
+const Nav = ({ isOpen, bgChange }) => {
   const router = useRouter();
 
   return (
@@ -16,7 +15,6 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
             name='Home'
             href='/'
             linkClass={`${
-              isDrop ||
               bgChange ||
               router.pathname === "/how-it-works" ||
               router.pathname === "/market-place" ||
@@ -32,7 +30,6 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
             name='How It Works'
             href='/how-it-works'
             linkClass={`${
-              isDrop ||
               bgChange ||
               router.pathname === "/how-it-works" ||
               router.pathname === "/market-place" ||
@@ -48,7 +45,6 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
             name='Market Place'
             href='/market-place'
             linkClass={`${
-              isDrop ||
               bgChange ||
               router.pathname === "/how-it-works" ||
               router.pathname === "/market-place" ||
@@ -64,7 +60,6 @@ const Nav = ({ clicked, isDrop, isOpen, bgChange }) => {
             name='About'
             href='/about'
             linkClass={`${
-              isDrop ||
               bgChange ||
               router.pathname === "/how-it-works" ||
               router.pathname === "/market-place" ||

@@ -32,7 +32,7 @@ const Carousel = () => {
               <img src='/images/slide-pix1.png' alt='' />
             </div>
             <div className={styles.cardFooter}>
-              <h5>Comming Soon 1</h5>
+              <h5>Comming Soon</h5>
               <h6>Akara Market</h6>
             </div>
           </div>
@@ -44,7 +44,7 @@ const Carousel = () => {
               <img src='/images/slide-pix2.png' alt='' />
             </div>
             <div className={styles.cardFooter}>
-              <h5>Comming Soon 2</h5>
+              <h5>Comming Soon</h5>
               <h6>Akara Market</h6>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Carousel = () => {
               <img src='/images/slide-pix3.png' alt='' />
             </div>
             <div className={styles.cardFooter}>
-              <h5>Comming Soon 3</h5>
+              <h5>Comming Soon</h5>
               <h6>Akara Market</h6>
             </div>
           </div>
@@ -68,7 +68,7 @@ const Carousel = () => {
               <img src='/images/slide-pix4.png' alt='' />
             </div>
             <div className={styles.cardFooter}>
-              <h5>Comming Soon 4</h5>
+              <h5>Comming Soon</h5>
               <h6>Akara Market</h6>
             </div>
           </div>
