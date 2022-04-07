@@ -5,15 +5,11 @@ import styles from "./styles.module.scss";
 const CountDown = () => {
   const calcTimeLeft = () => {
     let year = new Date().getFullYear();
-    let date = new Date();
-    // console.log(year);
-    // console.log(date);
+
     // let mayFirst = new Date(year + "-05-1 00:00:00".replace(" ", "T") + "Z");
-    let mayFirst = new Date(year + "-05-1 00:00:00".replace(/-/g, "/"));
-    // console.log(mayFirst);
+    let mayFirst = new Date(year + "-05-1 00:00:00".replace(/-/g, "/")); // Works for IOS
 
     const dateDifference = +mayFirst - +new Date();
-    // console.log(dateDifference);
 
     let timeLeft = {};
     if (dateDifference > 0) {
@@ -24,13 +20,11 @@ const CountDown = () => {
         seconds: Math.floor((dateDifference / 1000) % 60),
       };
     }
-    // console.log(timeLeft);
+
     return timeLeft;
   };
 
   const [timeLeft, setTimeLeft] = useState(calcTimeLeft());
-
-  // console.log(timeLeft);
 
   useEffect(() => {
     setTimeout(() => {
@@ -38,7 +32,7 @@ const CountDown = () => {
     }, 1000);
   });
 
-  return (
+  return timeLeft.days !== 20 ? (
     <div className={styles.countDown}>
       <div>
         <h3>{timeLeft.days}</h3>
@@ -52,6 +46,10 @@ const CountDown = () => {
         <h3>{timeLeft.seconds}</h3>
         <p>Seconds</p>
       </div>
+    </div>
+  ) : (
+    <div className={styles.timeUp}>
+      <h4>We've Launched !!!</h4>
     </div>
   );
 };
