@@ -20,6 +20,11 @@
 }
 
 @font-face {
+  font-family: Semi-Bold;
+  src: url("../public/fonts/inter/Inter-SemiBold.ttf");
+}
+
+@font-face {
   font-family: Inter-Extra-Bold;
   src: url("../public/fonts/inter/Inter-ExtraBold.ttf");
 }
@@ -89,10 +94,13 @@ p {
 h1,
 h2,
 h3,
-h4,
+h4 {
+  font-family: Inter-Bold;
+}
+
 h5,
 h6 {
-  font-family: Inter-Bold;
+  font-family: Semi-Bold;
 }
 
 p {

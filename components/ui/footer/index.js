@@ -12,20 +12,7 @@ const Footer = () => {
           <div className={styles.logo}>
             <Logo />
           </div>
-          <div className={styles.socials}>
-            <a href='/'>
-              <i className='fab fa-instagram'></i>
-            </a>
-            <a href='/'>
-              <i className='fab fa-facebook-f'></i>
-            </a>
-            <a href='/'>
-              <i className='fab fa-linkedin-in'></i>
-            </a>
-            <a href='/'>
-              <i className='fab fa-youtube'></i>
-            </a>
-          </div>
+        
           <div className={styles.copyright}>
             <p>Copyright © 2020 Akara Marketplace</p>
             <p>All rights reserved</p>

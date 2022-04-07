@@ -8,25 +8,9 @@ import { useRouter } from "next/router";
 import styles from "./styles.module.scss";
 
 const Header = ({ isOpen, clicked }) => {
-  const [isDropOpen, setDropOpen] = useState(false);
-
   const [bgChange, setBgChange] = useState(false);
 
   const router = useRouter();
-
-  const dropHandler = (payload) => {
-    setDropOpen(payload);
-  };
-
-  useEffect(() => {
-    if (!isOpen) {
-      setDropOpen(false);
-    }
-  }, [isOpen]);
-
-  useEffect(() => {
-    setDropOpen(false);
-  }, [router.pathname]);
 
   useEffect(() => {
     const changeHeaderBg = () => {
@@ -59,7 +43,7 @@ const Header = ({ isOpen, clicked }) => {
       <div className={styles.wrapper}>
         <div className={styles.logo}>
           <Link href='/'>
-            <a className={`${isDropOpen ? styles.lightLogo : ""}`}>
+            <a className=''>
               {bgChange ||
               isOpen ||
               router.pathname === "/how-it-works" ||
@@ -75,7 +59,6 @@ const Header = ({ isOpen, clicked }) => {
 
         <Nav
           bgChange={bgChange}
-          isDrop={isDropOpen}
           isOpen={isOpen}
           clicked={(payload) => dropHandler(payload)}
         />
