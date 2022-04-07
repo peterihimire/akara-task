@@ -8,7 +8,8 @@ const CountDown = () => {
     let date = new Date();
     // console.log(year);
     // console.log(date);
-    let mayFirst = new Date(year + "-05-1");
+    // let mayFirst = new Date(year + "-05-1 00:00:00".replace(" ", "T") + "Z");
+    let mayFirst = new Date(year + "-05-1 00:00:00".replace(/-/g, "/"));
     // console.log(mayFirst);
 
     const dateDifference = +mayFirst - +new Date();
