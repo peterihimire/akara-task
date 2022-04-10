@@ -9,6 +9,11 @@
     padding: 200px 0px 0px;
   }
 
+  @media screen and (max-width: 600px) {
+    height: auto;
+    padding: 130px 0px 0px;
+  }
+
   .lottieBg {
     position: absolute;
     z-index: -1;
