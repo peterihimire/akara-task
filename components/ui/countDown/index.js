@@ -32,7 +32,7 @@ const CountDown = () => {
     }, 1000);
   });
 
-  return timeLeft.days !== 20 ? (
+  return timeLeft.days !== 0 ? (
     <div className={styles.countDown}>
       <div>
         <h3>{timeLeft.days}</h3>

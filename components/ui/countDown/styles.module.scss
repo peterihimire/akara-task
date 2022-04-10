@@ -52,6 +52,7 @@
       font-weight: 600;
       color: var(--white);
       font-size: 38px;
+      margin-top: 10px;
     }
   }
 
@@ -81,5 +82,13 @@
     font-size: 48px;
     color: var(--white);
     line-height: 120px;
+
+    @media screen and (max-width: 700px) {
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 40px;
+      margin-top: 10px;
+
+    }
   }
 }
